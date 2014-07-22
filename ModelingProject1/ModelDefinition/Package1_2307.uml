@@ -1,0 +1,2003 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="72f2416e-d965-4d8f-bf34-64f80cc46da9"
+  name="EFPayroll"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="8e04d772-1906-4238-8769-bb33e31bdce1"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DUnit_Of_Work.EFPayroll"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="d4eb0722-d31c-4cb7-9124-085f1007ae77"
+        name="SQLRepository"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="1e4d55e1-5d64-4701-941d-d261452e45a0"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7f000dd3-7749-43a4-93fb-a0b6427e814e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cd169835-c33a-46ba-8b40-6030b566b86e">
+                <propertyInstance
+                  Id="92eb79a7-4015-4aa3-b474-70929ba36ae3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d8ecf0e8-9dae-4080-ac10-bef690820718">
+                <propertyInstance
+                  Id="b96b441c-0038-42ac-929d-28736df26207"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="64927272-6538-4dae-bab1-11e4c365f5db">
+                <propertyInstance
+                  Id="4a60b941-2524-4c3d-9670-7c3b5a5e3b45"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8640c41a-d9ac-4062-85ba-1e7678e54ee6">
+                <propertyInstance
+                  Id="ed8529fb-7fc6-48d5-baa4-5473e0b62b40"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c730af4f-a557-4cbc-80e8-2ee0ab88e907">
+                <propertyInstance
+                  Id="29612c8a-9c61-4d34-8997-a01b3ffd1e79"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="27ef26d2-2fda-4c23-8f7d-5a52e3efd47c">
+            <interfaceMoniker
+              Id="63ed2ae9-8114-475b-a6d9-b2ce0d2b4e16"
+              LastKnownName="IGenericRepository&lt;T‎&gt;"
+              LastKnownLocation="Package7_2307.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="eb7b8226-b8f2-4d07-8a4f-8a6a4ec62864"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="e4d83cdd-c494-460f-9f18-f330b0d24295">
+                <referencesInternal>
+                  <reference
+                    Id="a123b0b4-ff03-4df6-9620-222f3866fe1f"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="46eb7b14-85f9-44b4-901b-515e7ac2082c"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="8d33778f-f211-4409-8fb0-06787b2feaf9"
+            name="Context"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c6a234e0-f046-4e3c-8dae-798407a82191"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) Member%3DContext"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bfecbed9-cdef-4280-958a-42958e14bd08"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2fe0cca-8ab7-4d48-ad53-9553163604b5">
+                    <propertyInstance
+                      Id="6089c34c-cb23-4cb9-9043-adfef90d9da9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd038e7c-6d33-4405-9bf7-3304d91b849e">
+                    <propertyInstance
+                      Id="8c9d122a-c4ba-49f5-acf2-a169ba12b64e"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9ead383-b14e-4bfc-a20f-20f42a1c4ac5">
+                    <propertyInstance
+                      Id="ded5d06c-ae6a-441b-a9d5-856f00c16ba5"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86899838-0549-45ab-a8a2-b27cc7b42ece">
+                    <propertyInstance
+                      Id="6ebd62e0-0c7b-433f-a121-eb7b968f17db"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c59e423-e127-402d-9d62-33218fe78652">
+                    <propertyInstance
+                      Id="d9be03cc-6114-417f-9e0f-50da34915688"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="2abeae27-b99b-42fd-906a-59994986db2a"
+                LastKnownName="EmployeeContext"
+                LastKnownLocation="Package2_2307.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="758eef33-f94f-4707-a6ff-3b46c71dc1b7"
+            name="dbSet"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fce3f7af-623a-4402-81f3-0644c4353a54"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) Member%3DdbSet"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0942966b-0d3c-4b1f-90b3-6c3c6fe2a1f1"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff1ee435-dced-4098-8d66-b723317caa70">
+                    <propertyInstance
+                      Id="7f9ba136-9b1e-4248-b2de-9940666282ca"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3daeb689-3e1e-4d38-bd12-4121a4bb142c">
+                    <propertyInstance
+                      Id="9e6b8791-2f6e-46b5-8bd9-39cfe34d8ade"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18960209-5a0a-475f-8a14-e6629ae74094">
+                    <propertyInstance
+                      Id="6dd4b5ed-3cc7-433e-9e7f-ae3f6e220109"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b86daf3-a225-4450-9c89-c0fdf6320285">
+                    <propertyInstance
+                      Id="a5283cc0-113d-4162-889a-652c347d1cf6"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1f7d362-539c-4c35-84c6-400813d899b6">
+                    <propertyInstance
+                      Id="757c03de-c16d-4089-949a-277199aacf1f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f9c27b16-020b-41b4-8901-6e8b56e2d519"
+                LastKnownName="DbSet&lt;T‎&gt;"
+                LastKnownLocation="Package6_2307.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a252b009-9405-4fdf-b16a-d7704cea6222"
+            name="SQLRepository"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fd57fac6-d000-444b-81eb-65b0cbc38564"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployeeContext)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="36fc41ad-21ed-4006-a4d7-3fac4f077ae0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ccecc2e1-1844-4256-8183-8d3b44b04675">
+                    <propertyInstance
+                      Id="1ba23e9a-f28b-474b-8e47-5dc19f8fd517"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="472ef832-c31b-4438-89e5-582472ae58b5">
+                    <propertyInstance
+                      Id="234e495b-e464-4b11-9001-4e7b1ee46c1c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f5bd16c-0d56-42f4-a43a-7b0605bfd86c">
+                    <propertyInstance
+                      Id="b8790ba4-04b7-4f03-b8bd-8393224e1b91"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c345b589-9ee6-4454-b41c-15fbf9a13cd7">
+                    <propertyInstance
+                      Id="92fd648a-4ff4-40b3-894f-4f492e7af159"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0ab92fa-2ccc-4f82-b158-31d9de90ef96">
+                    <propertyInstance
+                      Id="c7a3e4fe-41bf-42d9-8ce5-38a7aeafc0cf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57faa6fd-3623-4008-ab9f-2b5b71537669">
+                    <propertyInstance
+                      Id="6726ab58-ba9f-4dde-be5a-f646629082fd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="02b47276-bf84-4193-8948-e79cee3e3c8d"
+                  name="_Context"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="71bd8a27-6fa9-4735-be1d-618c3796b2d2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployeeContext)]) ParameterIdentifier%3D_Context"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2abeae27-b99b-42fd-906a-59994986db2a"
+                      LastKnownName="EmployeeContext"
+                      LastKnownLocation="Package2_2307.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fbc53b6d-f593-4ebe-ab0f-4f9ac884fa1c"
+            name="Add"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9115083a-bcd1-4626-8bdf-c49b529f6e38"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) Member%3D(Name%3DAdd OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c6b2697b-1f3a-4d92-bc24-c29519ad1380"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91bd3959-a87b-4ada-86ad-6e847c87eaf8">
+                    <propertyInstance
+                      Id="1dc61bb8-9b4b-44d2-af59-f4bb45a0b407"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0dba9011-fd09-48be-a87b-0e60c4382eef">
+                    <propertyInstance
+                      Id="b1cbafac-7cb0-4b91-8c42-f8e04eef933f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67343498-0af1-4408-bb86-e5927e150492">
+                    <propertyInstance
+                      Id="1709ff0c-0378-4876-b119-32fcdfaa79e9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6263838-0b03-4f12-886f-2b0b5bc43de2">
+                    <propertyInstance
+                      Id="b2cb0b2a-18a2-416e-b5ed-cc10d5b3aa42"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4edc9d9-1efa-4713-874f-830652932374">
+                    <propertyInstance
+                      Id="007363be-ea5c-430f-9086-fb97a9a62633"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dea3c1bf-b771-497c-affb-9cca3f71abf0">
+                    <propertyInstance
+                      Id="77e5a64f-197a-424e-9a0b-369428a9e91b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5c0a0b06-3446-46b6-9d4c-db863f6fedb4"
+                  name="entity"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7b06ee58-bfd5-44c5-9317-63ed01264153"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) Member%3D(Name%3DAdd OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)]) ParameterIdentifier%3Dentity"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="46eb7b14-85f9-44b4-901b-515e7ac2082c"
+                      LastKnownName="T"
+                      LastKnownLocation="Package1_2307.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="58e0cf2d-9754-4417-9447-6c215ac52ddb"
+            name="Delete"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5a3d9199-2444-42ad-bc45-aa10c0fd35fb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) Member%3D(Name%3DDelete OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="11a33493-196e-442c-8c80-a3e3f83fa53f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e12dbd2-7271-4dd3-bd01-73ba5d151cc1">
+                    <propertyInstance
+                      Id="e7e7a63d-ddb7-427c-96e9-88790c8450e4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68ae0cee-d16d-4378-9a53-fbbaf07d1333">
+                    <propertyInstance
+                      Id="9b7679a9-3014-48c2-9bbf-27088dbdbf50"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d304481-cab7-456e-8a0b-255e3595c014">
+                    <propertyInstance
+                      Id="7a8bbf31-2c3d-4805-ba64-f209f153636d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23fd6ccc-43cc-434b-8ea8-9a6e8d31163d">
+                    <propertyInstance
+                      Id="be3ed47a-db05-4d99-b230-952fb3802007"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cfbf3b7-cfbc-45b1-b585-168946f9c0b5">
+                    <propertyInstance
+                      Id="48e494d2-e4ac-4c25-9337-9191ec002a92"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe94e582-25b6-479b-b2b6-999695ac3edc">
+                    <propertyInstance
+                      Id="ed73401c-c6b7-4975-826c-da51435592df"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a877b6be-a9ac-4d17-9019-acae4fddb695"
+                  name="entity"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6736c2c2-a4c5-4f09-9e73-5a519f2d2ea7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) Member%3D(Name%3DDelete OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)]) ParameterIdentifier%3Dentity"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="46eb7b14-85f9-44b4-901b-515e7ac2082c"
+                      LastKnownName="T"
+                      LastKnownLocation="Package1_2307.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cf578b1f-0ff9-4db5-a869-f9b8a9491ec3"
+            name="GetById"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="53e3223a-5f57-4c72-b9c2-fda62d9e5688"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) Member%3D(Name%3DGetById OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="744fa016-bd24-4f07-9aa0-2e9a33ca822f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7ace3a6-e747-4189-a046-c6a11714e7fa">
+                    <propertyInstance
+                      Id="2b2dca1b-5c6d-4abd-8138-46a9a05a791d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08b17d98-b264-4087-86c6-2803dfe8630c">
+                    <propertyInstance
+                      Id="6dbebbe2-0ab1-42a3-a2d0-9936a1272d2b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d5c6c71-d6ea-4fc4-9073-fc9a56f039eb">
+                    <propertyInstance
+                      Id="2d91426f-a136-4173-ae1a-8459432307a3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1b61a84-a319-4c62-a3ab-66709f023dfa">
+                    <propertyInstance
+                      Id="71750228-ff82-47e9-bb07-3609c52d25d2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3549f2e8-f103-4361-bad8-bed84582b2c0">
+                    <propertyInstance
+                      Id="e0124d34-00b2-407e-b683-8b36f5164076"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f68191ac-2f61-4198-a384-4ecdc5fff086">
+                    <propertyInstance
+                      Id="383e8c5b-1c30-433f-b87a-dbb8e747b293"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ba2f5560-04fa-49d7-a33c-d2e1f8038e6b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="46eb7b14-85f9-44b4-901b-515e7ac2082c"
+                      LastKnownName="T"
+                      LastKnownLocation="Package1_2307.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="301ead8c-50f1-4044-bd6b-00768a20ac83"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5e7dddc1-62b2-456f-9315-cbb883e415c2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) Member%3D(Name%3DGetById OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="65ba8670-80b7-43ec-8867-b553d57a3e0d"
+            name="Update"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4935d284-7095-4fcf-b1c2-c26fb2b1f4a8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) Member%3D(Name%3DUpdate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a4173a7f-b567-4185-bea7-97c082128bc3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9dc7613e-a7e2-494f-86aa-60b794db2140">
+                    <propertyInstance
+                      Id="ff03d18e-5418-4660-bcef-a329c41a678b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c07f8d4c-00ab-47c9-9ab0-c2d44a7f45d6">
+                    <propertyInstance
+                      Id="ad67c1f1-750b-4750-b28d-4832d81bd22b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f36d48e9-1334-46f9-a9c0-344850e9d02d">
+                    <propertyInstance
+                      Id="84577833-b651-4a11-955f-3a90f87ea42a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08810ae6-05a7-4f30-bdb5-b1b1feab643b">
+                    <propertyInstance
+                      Id="44cac057-fa10-4afc-bef0-36162dacf2a9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d7dce823-b0f7-4065-ac0a-cbdfa879b4b8">
+                    <propertyInstance
+                      Id="ad101642-906e-4efb-bf43-0d0af7356df2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d502fc0-7ed8-4287-bd95-48be87b71863">
+                    <propertyInstance
+                      Id="c3434d5f-bd99-4795-b98c-18282b529539"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c320f61a-974d-4348-a351-8bc8bb12a8e8"
+                  name="entity"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="40b1e1c1-760c-44d4-a26b-abc367bc7d67"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) Member%3D(Name%3DUpdate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)]) ParameterIdentifier%3Dentity"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="46eb7b14-85f9-44b4-901b-515e7ac2082c"
+                      LastKnownName="T"
+                      LastKnownLocation="Package1_2307.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f62ce72a-f02a-44e7-9e93-b4676eab8ed2"
+            name="Query"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5c15fd1e-08b7-4cfc-8c38-39bfe781eec1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3D(Name%3DSQLRepository GenericParameterCount%3D1) Member%3DQuery"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="94bd62ff-e0ba-470c-bfec-084a7313afe9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62624161-4316-44c3-8113-4cc52385b6e5">
+                    <propertyInstance
+                      Id="10e24cf0-facf-411f-be7d-33bcc0282437"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6278c164-36aa-4e0e-9c06-e445b8c85dcc">
+                    <propertyInstance
+                      Id="5149995d-f443-4359-b4c9-1db1551ec985"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e4766c8-88f2-443c-8f4e-c232d5176d3d">
+                    <propertyInstance
+                      Id="c9c1b061-9c5b-4ffe-9928-f6de90a998f5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09f5d972-4d08-473d-bbf5-0a94b67f1429">
+                    <propertyInstance
+                      Id="09ca7b60-612d-4685-b9ba-e943cf2541df"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dce23be9-ec9f-4850-a709-bc8644cb5ee5">
+                    <propertyInstance
+                      Id="2a265351-b8ba-46a8-908f-d9738b3a366a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48e6d580-8949-4e06-a970-41df53fe068b">
+                    <propertyInstance
+                      Id="4ee3d7a7-0a7a-4a99-99d7-2e7dc8447721"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="654dd420-6241-4522-9f85-3c4d6edc0968"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="003db729-9ce8-4c06-9ada-6b0702d366ec"
+                      LastKnownName="IQueryable&lt;T‎&gt;"
+                      LastKnownLocation="Package4_2307.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="75286aae-6070-4dff-92ef-494b077edba3"
+        name="SQLUnitOfWork"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3befaff2-e963-4f37-a832-463d8c656f67"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3DSQLUnitOfWork"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e1700da5-a8b3-48a3-aced-721af2bccdf0"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="78e3f6a0-b46b-4338-9030-113a75f0e244">
+                <propertyInstance
+                  Id="7596955a-9d89-4972-af35-2d9b10847f9c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b4c195f-38e6-40e4-860a-89bb518b29b5">
+                <propertyInstance
+                  Id="3cb58646-8589-43fa-9436-d44fcc967700"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1c0f5cc1-83e1-473f-b3d7-b3549fafd485">
+                <propertyInstance
+                  Id="df6a8011-a5c7-43d9-a435-96be4ac69251"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="46fd3ead-e8e8-445d-ab22-8b6f573f2a83">
+                <propertyInstance
+                  Id="80aa61f3-ed06-4c94-a15b-139bb6474ecf"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9e231705-71be-4ba9-8dd6-83f0ba66dfa4">
+                <propertyInstance
+                  Id="eeb80a7e-b455-40df-8cf7-a8c71fb879c9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="82a3d74e-296f-4525-8157-3a2738f1d811">
+            <interfaceMoniker
+              Id="032c1ca3-0886-4fbc-81b5-1598990ce900"
+              LastKnownName="IUnitOfWork"
+              LastKnownLocation="Package7_2307.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="bfa30103-51fd-4d0c-8398-6c51f20e0983"
+            isDerived="false"
+            sourceEndRoleName="SQLUnitOfWork"
+            targetEndRoleName="Departments"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="719a4e98-a951-4735-a0f5-137d2851ddd7"
+              LastKnownName="IGenericRepository&lt;Department‎&gt;"
+              LastKnownLocation="Package7_2307.uml" />
+            <description>Property Departments references type IGenericRepository&lt;Department‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1e4e9842-0fcd-4e05-98c1-7ac663042097"
+                  name="SQLUnitOfWork"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="eaa0e804-4e69-4418-bb20-2db039511785"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bf7d04f0-b747-43b1-a864-b6c1aa6bb872"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="da20b27b-86ab-407b-ba97-d7165a61139b"
+                  name="Departments"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1bcbf5c9-7cee-4a32-8e11-2fca060e3694"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="795bc365-a1de-4adb-9c13-6080c0beeccb"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8ed9ce6f-8e90-4537-bde7-ad2e233cc9cc"
+            isDerived="false"
+            sourceEndRoleName="SQLUnitOfWork"
+            targetEndRoleName="EmployeePayroll"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="cd6e8e8d-eeb3-4793-bc41-02835944b629"
+              LastKnownName="IGenericRepository&lt;Payroll‎&gt;"
+              LastKnownLocation="Package7_2307.uml" />
+            <description>Property EmployeePayroll references type IGenericRepository&lt;Payroll‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6ef3adad-becb-4d0e-84e6-fa6a871ccd99"
+                  name="SQLUnitOfWork"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="35998647-09f8-4922-8f44-88c25cdeb331"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fb441e67-92b6-4e90-a6a9-a39a8f847467"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dff1ce2b-0bf3-43d0-bb4d-e53f46a16329"
+                  name="EmployeePayroll"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9aca6ca5-8d37-4808-b7ee-e50eaa928835"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a3a9513e-a907-4b9e-a47a-c54c3b8a1aaa"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c864f857-7d8a-4933-924e-fe9ff308d69f"
+            isDerived="false"
+            sourceEndRoleName="SQLUnitOfWork"
+            targetEndRoleName="Employees"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="299436aa-ff38-45a6-aaf6-d62c4d044186"
+              LastKnownName="IGenericRepository&lt;Employee‎&gt;"
+              LastKnownLocation="Package7_2307.uml" />
+            <description>Property Employees references type IGenericRepository&lt;Employee‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a39a76fd-a21f-4d54-a5c4-ac36daa836c5"
+                  name="SQLUnitOfWork"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0ef4cdcb-6808-4331-8367-137943eebcae"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d81d1b01-c805-4c68-abbc-de1e5dfd5d07"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ecba60c8-2686-45f7-bec7-1fbecb72c2fd"
+                  name="Employees"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ee142d3d-5089-488b-86dd-f693e7f04ca3"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1815518d-b9d5-4864-a952-6e23426c9646"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="dd08538e-ea29-4cf5-8073-0d874323ba2e"
+            name="Departments"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="acc10ff3-1fc3-4f89-b8f5-961bda4f288d"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3DSQLUnitOfWork Member%3DDepartments"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ebaed718-7fe2-4484-8c32-4897d7711f6d"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd85c82f-1c7b-41d8-be86-1648513312c1">
+                    <propertyInstance
+                      Id="0f28d4cf-ce7a-45a8-99df-0263705d4238"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08a410dc-e2c0-4204-b489-4f277ae0eeed">
+                    <propertyInstance
+                      Id="ab28f6ff-fa60-43cf-b9c9-9c54e13fd469"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9cb88a8-d1b6-4192-9e0e-0dba1a4f437d">
+                    <propertyInstance
+                      Id="564ccd51-8ad1-46a8-830e-5d3629894537"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35f1d7bc-660f-4719-95ce-76e9797a926c">
+                    <propertyInstance
+                      Id="e6e0dea8-6488-411c-88e6-486b8980d252"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85c9e380-90be-49db-9279-d1a81baa2f35">
+                    <propertyInstance
+                      Id="54bdffe7-5e4c-4645-ab4f-2738a70ba7af"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81bfd441-6408-4c87-86dd-e89e417d3dee">
+                    <propertyInstance
+                      Id="60ba8fad-95be-419e-8741-a3ab80527fe5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c41767a3-68cd-404d-b1c6-89c5c999dccd">
+                    <propertyInstance
+                      Id="763a8534-db70-4b85-8291-8b9a20ab8304"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="719a4e98-a951-4735-a0f5-137d2851ddd7"
+                LastKnownName="IGenericRepository&lt;Department‎&gt;"
+                LastKnownLocation="Package7_2307.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b1d71301-c8a2-49ab-a97e-6b3967d3bbb3"
+            name="EmployeePayroll"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d2659905-542a-4f04-bdd4-8cde3ff896fb"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3DSQLUnitOfWork Member%3DEmployeePayroll"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d2499ef3-2cec-4e79-8e0e-1dee1e1b06bf"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96181708-6f7f-4803-a91a-d73c2c15ed6a">
+                    <propertyInstance
+                      Id="b778c67b-cbe2-43dc-a98d-859e1061fbea"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83bb2d41-9ac3-431f-9244-45228b1b4ac2">
+                    <propertyInstance
+                      Id="a0299ef3-b0f0-435e-9132-665832426936"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="edeb7cae-530a-41fb-97cc-e2c7cb6c5199">
+                    <propertyInstance
+                      Id="97c7c9f6-e4aa-40a6-8574-3f79b072269e"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="455f23db-4ba9-4515-992c-ece03b1e4cb7">
+                    <propertyInstance
+                      Id="cac53c0d-235f-414a-aeef-e96ca39f7234"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da169399-6b23-46a9-a04c-6fb74de8fb49">
+                    <propertyInstance
+                      Id="e1beee94-05fe-4433-a267-7434b151daff"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b258443-fad9-42e0-9c31-ef13c82e73b5">
+                    <propertyInstance
+                      Id="10ecc288-88ae-4894-98c9-58a1fbb5e2d2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01b93cbd-ecd9-4538-a9e7-55407d413aa1">
+                    <propertyInstance
+                      Id="f0d43444-cb28-4bd4-87b2-caf5396f7113"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="cd6e8e8d-eeb3-4793-bc41-02835944b629"
+                LastKnownName="IGenericRepository&lt;Payroll‎&gt;"
+                LastKnownLocation="Package7_2307.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b1b86325-55b2-44e0-b64d-e6a5294ead50"
+            name="Employees"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d2d9b866-7eb1-4e6c-8e64-e265e5fe4fac"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3DSQLUnitOfWork Member%3DEmployees"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fabdc056-0089-4878-acf6-9a22e71aea64"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f887c004-0b0b-448e-8f64-5073102bae75">
+                    <propertyInstance
+                      Id="2a7e439b-0f1e-4dbb-b99d-3197a3c17580"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0da6ca4-21b0-4e0c-84d2-ad62703e824f">
+                    <propertyInstance
+                      Id="83ffbfa8-3a01-47ce-895f-047b398e98e1"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d4d8a2f-5354-4943-acb8-8b0f2b153a31">
+                    <propertyInstance
+                      Id="c07dfdf0-bb28-43a7-83cd-0a76163300a1"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="335c0eb5-c14c-4944-b8fd-6d6670de7760">
+                    <propertyInstance
+                      Id="aaead53e-9fce-4ef9-9d13-5e0a20c09500"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98b0e7d1-188f-4d03-8ae3-e91460e3810e">
+                    <propertyInstance
+                      Id="af45d3c0-6d95-499f-829d-e23232ae3d54"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd58b1c0-f9a7-4840-a56a-0667f2ce83a0">
+                    <propertyInstance
+                      Id="2c6c7700-21a7-44dd-b34e-1d0670204d53"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1862d85f-6b1f-4391-8a0f-77bc31c0e1bb">
+                    <propertyInstance
+                      Id="4ef8e407-4d65-4059-bd8d-93609bec566e"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="299436aa-ff38-45a6-aaf6-d62c4d044186"
+                LastKnownName="IGenericRepository&lt;Employee‎&gt;"
+                LastKnownLocation="Package7_2307.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f578fc2f-2a81-4c89-87cf-a8bf2f284ce9"
+            name="Context"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3014dc19-ede5-4e8f-9925-24649daa8467"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3DSQLUnitOfWork Member%3DContext"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4d048481-e35d-429b-b9d9-7460574db75c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc09dd42-c4e9-46a7-a183-3be807ea7f8a">
+                    <propertyInstance
+                      Id="19dcf2e1-1971-47cc-a0c3-1605cbc13268"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ce75b4a-e065-4554-82b3-2b6775d7e312">
+                    <propertyInstance
+                      Id="6bfe6fe7-8b17-4c8a-b003-a17bdcef4a64"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ec2231d-edae-4fbe-9d04-6e0f0723bab5">
+                    <propertyInstance
+                      Id="54c47baf-e706-487b-8fc0-6f4a9bab2d6f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="453288bb-0e93-4309-8acb-9b91e472185d">
+                    <propertyInstance
+                      Id="82bc0b83-9ad8-4044-8a7b-1bcd46e20b21"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a51f3d95-23b1-40d8-ba2a-392ebb0134a7">
+                    <propertyInstance
+                      Id="bed81d11-ab94-4801-a9be-c535d8883ef4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="2abeae27-b99b-42fd-906a-59994986db2a"
+                LastKnownName="EmployeeContext"
+                LastKnownLocation="Package2_2307.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d125767b-c292-405a-afc8-e586842d7232"
+            name="_Departments"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="03ac64be-0782-44ad-bd0e-542d9c6bf933"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3DSQLUnitOfWork Member%3D_Departments"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="22d3e27d-6760-41c6-aa73-3b15af0d2c7f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1942b90-94f4-40e8-ab55-ed68ecc87ef6">
+                    <propertyInstance
+                      Id="dae7306e-c43d-494e-8321-c74ab350c2d2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0f8e2cc-88d9-4733-b08f-355561c06e7e">
+                    <propertyInstance
+                      Id="e1e69236-ba6f-451c-9b6e-b83342685a00"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="991c4d31-1008-49b9-bae8-1eb380ec927e">
+                    <propertyInstance
+                      Id="43d1ed66-1f04-4390-9afb-6160b6afa6f2"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c899a867-c419-4481-b8be-4bc353610bd9">
+                    <propertyInstance
+                      Id="346f0726-f10a-410d-84ef-3c85dca424c3"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f623952-7a59-4083-8db1-634048051c75">
+                    <propertyInstance
+                      Id="da465a75-ce8a-4707-8ce2-92f448a4b6ac"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="3c7c7323-a1e8-4992-b15f-6f3f7e92d2dd"
+                LastKnownName="SQLRepository&lt;Department‎&gt;"
+                LastKnownLocation="Package1_2307.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0acd1c2b-05c2-47b4-9a1c-6e9bdd97efa5"
+            name="_Employees"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e1b1cfdc-dfa1-48a7-9b02-fafcc28c9e14"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3DSQLUnitOfWork Member%3D_Employees"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8b677e69-96b3-428c-a8d1-9fce9e31e85b"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6c3c5a7-17d5-4680-ac5e-26b9a4cf830b">
+                    <propertyInstance
+                      Id="739fa4bb-faa2-4b81-a0ce-7f220214925d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29c6dad0-b686-4079-a98d-651ce3784d8b">
+                    <propertyInstance
+                      Id="797884fe-1e86-4703-93d0-182391a3ce31"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5576e200-7109-4c30-980f-8504b297e3be">
+                    <propertyInstance
+                      Id="585609ef-5108-4a6b-adf9-aea4dc3bf0c9"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bf9762c-b627-4730-8b46-c903a9fe5503">
+                    <propertyInstance
+                      Id="bdeeba9c-bd59-46b7-bcad-97d97d42a486"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6c513d3-b168-4c85-b4f4-f2efd3c60653">
+                    <propertyInstance
+                      Id="34fd7200-c8a1-43d0-beef-cbf971801d2a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="aba01806-8f51-41bc-be48-411158922f24"
+                LastKnownName="SQLRepository&lt;Employee‎&gt;"
+                LastKnownLocation="Package1_2307.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5c96f104-196a-4cf7-b902-aa4223d1595c"
+            name="_Payroll"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7b9d92dc-2561-447f-be73-4658cfc9c1a6"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3DSQLUnitOfWork Member%3D_Payroll"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="18c0603f-12ad-4dca-981f-a7317f0df5d0"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f596dfea-fd83-4ed7-b050-3863f4e7c628">
+                    <propertyInstance
+                      Id="4200f715-abc6-4e66-bea3-cfdab217ec4b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bbcb878e-765f-4ea9-a2f0-fc2a79a3c7f7">
+                    <propertyInstance
+                      Id="df6a2c4e-c1ab-4f72-bad7-3d2dfe636171"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18a6ab26-149c-4908-b970-f40c801a5dfc">
+                    <propertyInstance
+                      Id="64424801-5db1-4644-a0a0-50f16d8ace8f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cdb6668-a727-45a8-876f-a333494e607f">
+                    <propertyInstance
+                      Id="29afdfdc-5329-4249-86eb-03b7b8056710"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd41b6a2-1924-4c0d-8bd8-08230fe234c7">
+                    <propertyInstance
+                      Id="702b0e86-b9a1-44c2-a42f-c133a148ff36"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="0b8191ef-c1c8-467f-892a-bf36f48ed442"
+                LastKnownName="SQLRepository&lt;Payroll‎&gt;"
+                LastKnownLocation="Package1_2307.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="13cf2627-ed06-4df0-a655-8fb2c038d158"
+            name="SQLUnitOfWork"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="acb60b96-5c71-4b6e-8c1f-c15f09cfb89e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3DSQLUnitOfWork Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c4fa5126-f83a-48a9-88d0-1b23b83b72e5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9574e2b-2eeb-4549-bc97-24f9e9e845e5">
+                    <propertyInstance
+                      Id="6c16c746-bea5-4a0e-888a-d85f57e68b81"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e94e4fd7-7c60-4924-b461-c781d3802ec7">
+                    <propertyInstance
+                      Id="d47e5171-1f12-43a8-a134-faa9fca027a0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b50ab0a-451f-4f73-b5e8-9e0faca29542">
+                    <propertyInstance
+                      Id="c2e6971c-cc8e-4bd7-9c5a-a545aa715c00"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c56072a4-3aa5-4538-af5a-dd3dc64f4456">
+                    <propertyInstance
+                      Id="afe28fb2-a166-43be-9b38-f0a3546cd246"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b24dfa6-b53e-4f81-bce1-fe472f41ae28">
+                    <propertyInstance
+                      Id="172e5fde-1547-48d2-a976-8077368aacf3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91b66068-8cff-4ed0-828e-77f8e9c449d9">
+                    <propertyInstance
+                      Id="b1945a28-1348-4445-8755-732e048774c6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="024cc206-b167-4227-8dd9-58ab32a3776b"
+            name="Commit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c7736252-3b0b-43e7-9628-7e930cab1e74"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3DSQLUnitOfWork Member%3DCommit"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5df8b864-27a1-4c77-a98d-1e74fed43278"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfae57ff-c3f6-4c03-8a6b-571bee31f58b">
+                    <propertyInstance
+                      Id="71575a1c-7f5c-4dba-ac94-bc8f7e9cc34c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a7bf29b-b5b9-4fc5-b1b1-6fb81fdecff6">
+                    <propertyInstance
+                      Id="3aeb03ac-e1fe-4e06-abfe-23f54abfa33c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="926e7ee6-45c4-4c0a-9e54-a06286b6f039">
+                    <propertyInstance
+                      Id="6483fd92-482e-4d02-acfa-bf9110db4f03"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c90e5a0-11f5-4c66-8670-487fb4c0e5d1">
+                    <propertyInstance
+                      Id="6c3e5a05-a2d7-4dc9-9bfe-83507d97d529"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b319f2ff-3801-4517-b086-d8b48cf44ac1">
+                    <propertyInstance
+                      Id="66d1388f-8a74-40bc-a7f8-8d134d5721a8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77d4a513-36a1-4787-b011-088d3caae3de">
+                    <propertyInstance
+                      Id="fa920eb2-0dfc-49d6-8bb1-7cbc9045fc8b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="6d2ebbc7-a2d1-42d2-9066-5983dfd862fd"
+            name="ComputePayroll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="cc183234-fcb7-43b1-b194-64bc238a5f1d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.EFPayroll Type%3DSQLUnitOfWork Member%3DComputePayroll"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="225f341d-70d3-44a9-bfe1-fa05062a1ba3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08f7613a-ac09-488b-9d27-63c5b9749900">
+                    <propertyInstance
+                      Id="7149a4c5-5e9c-445a-a960-35d59f2de965"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ee46689-a368-4af7-8db0-b4355db6855a">
+                    <propertyInstance
+                      Id="4ecbd5cc-c2ed-4e4f-994c-0aae2f0ace77"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87793ab9-80f2-432b-b380-b4335e7b7168">
+                    <propertyInstance
+                      Id="5625e927-60ec-465a-ac57-3273adaba0d5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ef4b1f6-ed76-41ef-b9aa-2312f88a4dbe">
+                    <propertyInstance
+                      Id="b1875d13-ff9e-4031-b84d-84a73853f602"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="857fd3c8-8d09-4043-8c4a-596fcd76aaa5">
+                    <propertyInstance
+                      Id="6110b8bd-5b98-4ff5-a6a9-6f1f307be321"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b24b3ab-1a5e-4d82-a2f0-2df49c933c70">
+                    <propertyInstance
+                      Id="b782bafb-13be-4f24-8cbf-7b1914ed5d83"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3c7c7323-a1e8-4992-b15f-6f3f7e92d2dd"
+        name="SQLRepository&lt;Department‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4a564934-39b9-4000-8e69-a3826b6ac136"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b0e8e2fc-e79e-46ed-bbc1-dd98f63a6fc2">
+                <propertyInstance
+                  Id="5fef0592-c15e-438c-a861-9d970dee21e0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="047e5cb1-a79e-43cf-acef-470e139cd8ab">
+                <propertyInstance
+                  Id="e27a3eb5-ad98-4b7e-9cc9-217d0088fd2d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c64d917e-4e66-4272-ae2a-cb4641f879cd">
+                <propertyInstance
+                  Id="f3139ebf-745f-4599-99db-b8c69a1a091e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7edb84c5-ee32-49ab-a2b0-1c9d3ebfcd08">
+                <propertyInstance
+                  Id="0a423569-3e18-4173-9b96-1ebde45463a2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3bcd30b8-20cf-48cc-a37f-330491ba233e">
+                <propertyInstance
+                  Id="b3017e9a-04c6-4247-9033-b46646a8cc7b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="37499185-e69b-46c1-a353-0174425e4ec1">
+            <interfaceMoniker
+              Id="719a4e98-a951-4735-a0f5-137d2851ddd7"
+              LastKnownName="IGenericRepository&lt;Department‎&gt;"
+              LastKnownLocation="Package7_2307.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <signatures>
+          <templateBinding
+            Id="ddfc9bbe-365b-4203-8c77-5a4dbfec2026">
+            <redefinableTemplateSignatureMoniker
+              Id="eb7b8226-b8f2-4d07-8a4f-8a6a4ec62864"
+              LastKnownLocation="Package1_2307.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="78635e3a-25bd-4d80-a1ed-d3e93fff1d74">
+                  <actuals>
+                    <classMoniker
+                      Id="be6472db-311d-428c-9a13-469e9d2a8148"
+                      LastKnownName="Department"
+                      LastKnownLocation="Package2_2307.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="e4d83cdd-c494-460f-9f18-f330b0d24295"
+                      LastKnownLocation="Package1_2307.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="aba01806-8f51-41bc-be48-411158922f24"
+        name="SQLRepository&lt;Employee‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="688a278b-a3c4-480e-9676-90b5cf45b7ec"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d20dc576-c9f5-4aae-9487-85e0ebe6b055">
+                <propertyInstance
+                  Id="12f78d0d-6b7d-459a-b829-9e512689db91"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4875484f-01f5-4472-b147-6f9505b53854">
+                <propertyInstance
+                  Id="2eafddfa-8a1c-4506-9f75-c4addfc87a4e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a92f6721-b950-4174-a846-edeb65e6812e">
+                <propertyInstance
+                  Id="12aec3f1-20e0-4afa-a891-f804dd4968ed"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9dd9d9c2-2bc9-4b48-80c1-af431e8f9c93">
+                <propertyInstance
+                  Id="1a27228b-1410-4705-96b3-d927a7488f83"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9ba26ad5-14a7-4a74-83c9-ada52ef3c7e7">
+                <propertyInstance
+                  Id="feb69e17-2b29-458d-94e3-603a96f15ed8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="1b989377-2e20-4740-98d7-073404a5e6e7">
+            <interfaceMoniker
+              Id="299436aa-ff38-45a6-aaf6-d62c4d044186"
+              LastKnownName="IGenericRepository&lt;Employee‎&gt;"
+              LastKnownLocation="Package7_2307.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <signatures>
+          <templateBinding
+            Id="4640a214-88d3-405a-ae6e-78267d5421a3">
+            <redefinableTemplateSignatureMoniker
+              Id="eb7b8226-b8f2-4d07-8a4f-8a6a4ec62864"
+              LastKnownLocation="Package1_2307.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="14a8b5cf-8de7-4154-9ef4-7170db450bcd">
+                  <actuals>
+                    <classMoniker
+                      Id="46966032-f9a0-4473-b195-a98d1add76b5"
+                      LastKnownName="Employee"
+                      LastKnownLocation="Package2_2307.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="e4d83cdd-c494-460f-9f18-f330b0d24295"
+                      LastKnownLocation="Package1_2307.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0b8191ef-c1c8-467f-892a-bf36f48ed442"
+        name="SQLRepository&lt;Payroll‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="66bface8-ca47-4da9-afa2-bfdd08b085c0"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6991fbf6-f2aa-4f55-8c0b-58d6e2f229c5">
+                <propertyInstance
+                  Id="3de151e0-f512-423d-ad75-a772ecd6cd6d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9c6da11e-af73-43c2-95a8-6cb52a39a0af">
+                <propertyInstance
+                  Id="158070a4-13b8-456c-a61e-cc8d9ecd9014"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="47a0587c-3709-4da2-95a2-b3965ce6569d">
+                <propertyInstance
+                  Id="520be38b-37f7-4952-a16d-09beaf953eb5"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6d8529e9-873d-4539-979f-db33558247ec">
+                <propertyInstance
+                  Id="fdfe9370-c8a7-4df6-90aa-0fa3253afff8"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9b06488f-7173-41db-bc42-250f8511268e">
+                <propertyInstance
+                  Id="a77a4c0c-68b1-4659-ac72-c693bb48f3fd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="c1d5bcb8-5bc0-42fb-ac32-e6eb4a44c767">
+            <interfaceMoniker
+              Id="cd6e8e8d-eeb3-4793-bc41-02835944b629"
+              LastKnownName="IGenericRepository&lt;Payroll‎&gt;"
+              LastKnownLocation="Package7_2307.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <signatures>
+          <templateBinding
+            Id="a6e5218b-4614-40cb-bd57-5c3aa74b57f7">
+            <redefinableTemplateSignatureMoniker
+              Id="eb7b8226-b8f2-4d07-8a4f-8a6a4ec62864"
+              LastKnownLocation="Package1_2307.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="605f739b-f802-4f0f-bbca-9f99bd8efc0a">
+                  <actuals>
+                    <classMoniker
+                      Id="3577b5ec-5932-4c5d-8d4f-b35ca9f42d5b"
+                      LastKnownName="Payroll"
+                      LastKnownLocation="Package2_2307.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="e4d83cdd-c494-460f-9f18-f330b0d24295"
+                      LastKnownLocation="Package1_2307.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

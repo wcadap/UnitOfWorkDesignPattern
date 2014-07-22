@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmployeeDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Employees" Relationship="Self.FK_dbo_Employees_dbo_Departments_Department_Id" FromRole="Departments" ToRole="Employees" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Department_Id" Type="Int32" />
+    <NavigationProperty Name="Department" Relationship="Self.FK_dbo_Employees_dbo_Departments_Department_Id" FromRole="Employees" ToRole="Departments" />
+    <Property Name="Salary" Type="Decimal" Precision="10" Scale="2" />
+    <NavigationProperty Name="Payrolls" Relationship="EmployeeDBModel.FK_dbo_Payroll_dbo_Employee_Employee_Id" FromRole="Employee" ToRole="Payroll" />
+  </EntityType>
+  <Association Name="FK_dbo_Employees_dbo_Departments_Department_Id">
+    <End Role="Departments" Type="Self.Department" Multiplicity="0..1" />
+    <End Role="Employees" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="Department_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EmployeeContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Departments" EntityType="Self.Department" />
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <AssociationSet Name="FK_dbo_Employees_dbo_Departments_Department_Id" Association="Self.FK_dbo_Employees_dbo_Departments_Department_Id">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <EntitySet Name="Payrolls" EntityType="EmployeeDBModel.Payroll" />
+    <AssociationSet Name="FK_dbo_Payroll_dbo_Employee_Employee_Id" Association="EmployeeDBModel.FK_dbo_Payroll_dbo_Employee_Employee_Id">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Payroll" EntitySet="Payrolls" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Payroll">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Employee_Id" Type="Int32" />
+    <Property Name="StateTax" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="StateInsurance" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="NetPay" Type="Decimal" Precision="10" Scale="2" />
+    <NavigationProperty Name="Employee" Relationship="EmployeeDBModel.FK_dbo_Payroll_dbo_Employee_Employee_Id" FromRole="Payroll" ToRole="Employee" />
+  </EntityType>
+  <Association Name="FK_dbo_Payroll_dbo_Employee_Employee_Id">
+    <End Type="EmployeeDBModel.Employee" Role="Employee" Multiplicity="0..1" />
+    <End Type="EmployeeDBModel.Payroll" Role="Payroll" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Payroll">
+        <PropertyRef Name="Employee_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

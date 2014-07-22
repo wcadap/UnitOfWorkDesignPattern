@@ -1,0 +1,12 @@
+D:\Blogs\Unit of Work\Unit Of Work\bin\Debug\Unit Of Work.exe.config
+D:\Blogs\Unit of Work\Unit Of Work\bin\Debug\Unit Of Work.exe
+D:\Blogs\Unit of Work\Unit Of Work\bin\Debug\Unit Of Work.pdb
+D:\Blogs\Unit of Work\Unit Of Work\bin\Debug\EntityFramework.dll
+D:\Blogs\Unit of Work\Unit Of Work\bin\Debug\EntityFramework.SqlServer.dll
+D:\Blogs\Unit of Work\Unit Of Work\bin\Debug\EntityFramework.xml
+D:\Blogs\Unit of Work\Unit Of Work\bin\Debug\EntityFramework.SqlServer.xml
+D:\Blogs\Unit of Work\Unit Of Work\obj\Debug\Unit Of Work.csprojResolveAssemblyReference.cache
+D:\Blogs\Unit of Work\Unit Of Work\obj\Debug\Unit Of Work.exe
+D:\Blogs\Unit of Work\Unit Of Work\obj\Debug\Unit Of Work.pdb
+D:\Blogs\Unit of Work\Unit Of Work\bin\Debug\Data\EmployeeDB.mdf
+D:\Blogs\Unit of Work\Unit Of Work\bin\Debug\Data\EmployeeDB_log.ldf

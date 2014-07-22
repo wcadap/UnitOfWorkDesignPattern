@@ -1,0 +1,2926 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="6a1c9dd2-08af-40b7-969c-7c08aad6cf00"
+  name="DataModel"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="86c9466f-856f-4846-9dc1-f18ad30ec307"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DUnit_Of_Work.DataModel"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="2abeae27-b99b-42fd-906a-59994986db2a"
+        name="EmployeeContext"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="61b364ac-51ad-4a6d-8b00-f418d37f9b96"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployeeContext"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="80cdc8e7-2b0e-4ee3-9eda-b7bcc290d910"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a7a1c352-d5d0-47c1-919a-fa5794aaa832">
+                <propertyInstance
+                  Id="e7c3dd11-d771-4639-9fee-16be98954c9e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1d489918-b0ad-4091-b681-78eaeceb1a60">
+                <propertyInstance
+                  Id="8eba640a-1d09-4799-b5bf-7b57d5af6bb6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3711c527-e64e-4580-9959-3777b5c11514">
+                <propertyInstance
+                  Id="b2fcd256-e9de-4681-90ff-92a66cb5d33a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d280eaa7-9f16-48bd-9d1c-6c3541ab2048">
+                <propertyInstance
+                  Id="ca6c8981-3803-4c3e-8c77-8a373be41bc0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8704537b-6063-426e-bc69-0a9eff245f15">
+                <propertyInstance
+                  Id="24fee94d-3525-426f-9e2c-da0b01f742d7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="87fa2d9c-3681-4492-8377-914f1227d7e9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="147290e3-d867-4850-9851-5ee770b85e42"
+              LastKnownName="DbContext"
+              LastKnownLocation="Package6_2307.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="2c4dc73a-b51e-461e-9dae-8240d7be779a"
+            isDerived="false"
+            sourceEndRoleName="EmployeeContext"
+            targetEndRoleName="Departments"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ae4b8a84-1171-43fe-8fa3-962e4c0b8813"
+              LastKnownName="DbSet&lt;Department‎&gt;"
+              LastKnownLocation="Package6_2307.uml" />
+            <description>Property Departments references type DbSet&lt;Department‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5129f343-3235-4584-af51-bc2336ff51e1"
+                  name="EmployeeContext"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="37b5c2f8-f01c-4542-956d-ee59aa330fce"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9b7da50a-1014-46fc-b820-221a93555218"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="db10a5ba-bbac-428e-99b6-621cf57ed4e7"
+                  name="Departments"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e11daf97-40bb-4b84-8094-c77cf5e0c1fb"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d6253786-510a-4cc7-afba-ddef46ca8699"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="69d82d54-5656-43bc-97c1-e5094d24a53f"
+            isDerived="false"
+            sourceEndRoleName="EmployeeContext"
+            targetEndRoleName="Employees"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="58803352-b070-46fb-879e-c4e8c6dcee3d"
+              LastKnownName="DbSet&lt;Employee‎&gt;"
+              LastKnownLocation="Package6_2307.uml" />
+            <description>Property Employees references type DbSet&lt;Employee‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b666c348-0279-481f-9970-c98b15023fdb"
+                  name="EmployeeContext"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c94a3089-9f1a-4c56-bedd-70ef1e0e6e76"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e5030bc1-50f8-4ca5-8fb9-ec4497c6464e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="57535e87-3c38-4978-b019-f8e89f7945d0"
+                  name="Employees"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a996f640-69ac-491e-8834-5b42bc426a7e"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9960dc11-0d88-457a-9fb9-566a1011b194"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="995fac5b-b100-415e-9e5e-e7a057b1114a"
+            isDerived="false"
+            sourceEndRoleName="EmployeeContext"
+            targetEndRoleName="Payrolls"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="104e0406-7581-4150-a890-2cf0dcd6473c"
+              LastKnownName="DbSet&lt;Payroll‎&gt;"
+              LastKnownLocation="Package6_2307.uml" />
+            <description>Property Payrolls references type DbSet&lt;Payroll‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1c26b700-9301-454d-9cb9-48b83165a77a"
+                  name="EmployeeContext"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="aa4864d3-b629-4934-81e3-7ae1f1244e07"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="67fa2a12-4bb9-4001-a7c9-3aa5c7b5f891"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7175448c-54cc-494f-8bea-2dcd53ff06bb"
+                  name="Payrolls"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d7336375-ed3f-4387-89e4-1c4c649a2ddb"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5fdb80c5-8a4b-463b-8559-9bb7e206246e"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="5437a2f9-03a1-4246-98d8-f72788d4cb1f"
+            name="Departments"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="20e2320c-7640-4163-8fba-493fad353e14"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployeeContext Member%3DDepartments"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3bfd17bc-0b89-4fcb-b3f5-56db93a33d90"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="604b8415-8c81-442a-b641-cc132b0b84cb">
+                    <propertyInstance
+                      Id="efde244c-34d3-47f6-ac19-e0dedc7c6ce2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db01239d-4be0-4eaf-9546-b1f8edaafad9">
+                    <propertyInstance
+                      Id="e0742223-7cb6-4701-869e-88a3a3867335"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f649e2cd-3dfe-4a63-b5b6-e6a5cb2d2b1c">
+                    <propertyInstance
+                      Id="c7e1465c-d917-4aa2-8baa-d3c71b1abbbb"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de8f458f-146d-4d70-ba62-f140ede3e36c">
+                    <propertyInstance
+                      Id="8b6a04d6-0178-44f3-a243-1aa8812d6cff"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e86a69b2-23a1-4c0b-8dd5-f46be130979b">
+                    <propertyInstance
+                      Id="c893c941-1b09-4197-a624-6323a1601e05"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b83d116-d8bd-47d7-902c-911a8c0a7861">
+                    <propertyInstance
+                      Id="e0d4d079-cf50-45d3-8364-5ce9fee0a794"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67966538-54be-4eb4-9db1-70b1f60d23a1">
+                    <propertyInstance
+                      Id="4790fa29-26d4-4c91-95b2-ca942aa13b5f"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ae4b8a84-1171-43fe-8fa3-962e4c0b8813"
+                LastKnownName="DbSet&lt;Department‎&gt;"
+                LastKnownLocation="Package6_2307.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3d393b5c-dc0d-4e12-a42b-76e8c41fd9ec"
+            name="Employees"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="59b135de-fa66-46f4-8464-8afde7ed41f5"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployeeContext Member%3DEmployees"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cdfc8cef-6dbd-4d6c-83f6-dded51c59ec9"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec9d1386-1a65-4d71-ad95-7179eb532706">
+                    <propertyInstance
+                      Id="46b6a496-15a5-4078-b2d0-30d358e22b40"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2fee79e-12c8-4f4f-8e30-ea44ab895b7e">
+                    <propertyInstance
+                      Id="c9cb4276-9934-45ca-a20e-7642874b29f9"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc2eb541-3d43-4aac-bb36-30852ebe2c3f">
+                    <propertyInstance
+                      Id="122b7f8d-bf13-4005-88dc-584fdd9e4a0a"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1190454b-a472-4d06-a54e-8ceef9671855">
+                    <propertyInstance
+                      Id="14565690-bbd2-4b2c-93aa-f7d7b2b22612"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8aeecf41-eaa7-4123-b47f-05bb043a7e6f">
+                    <propertyInstance
+                      Id="d72458b3-51b9-4d57-83a7-5b8b698ea26c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c085948d-92ef-4400-b6f5-f061fafba93c">
+                    <propertyInstance
+                      Id="0c9b3b10-6ee1-498e-9e41-c4f4338c3a7e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="377f2220-69ee-4656-89f7-c7ed45093ddf">
+                    <propertyInstance
+                      Id="60027234-e944-4b30-8943-2fad46ec267f"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="58803352-b070-46fb-879e-c4e8c6dcee3d"
+                LastKnownName="DbSet&lt;Employee‎&gt;"
+                LastKnownLocation="Package6_2307.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ba9c69df-8426-48c9-b2c4-52e4a57d7ab9"
+            name="Payrolls"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e2f95446-64bf-4ac1-a3fd-b5ba602a311b"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployeeContext Member%3DPayrolls"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e3728d14-14aa-4356-920b-6874fdd94de3"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45f97347-e7c0-4448-ac0c-5e0502c24463">
+                    <propertyInstance
+                      Id="d0c5ade5-b556-4595-9332-26e06a4981bf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80463be7-9b8a-4626-84c0-84e5954593dd">
+                    <propertyInstance
+                      Id="697db2b9-09e6-40d5-8dba-99673ae2e7d8"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e87975a-8b93-4b32-80d1-d9abb988f777">
+                    <propertyInstance
+                      Id="ede212de-754a-49cf-a096-85ac6fe7a862"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8adb5e5e-4d65-4935-bdcf-e738aa31ae48">
+                    <propertyInstance
+                      Id="9cbaa136-385d-443a-a567-db24bb66ec76"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8a2fc71-80a6-4037-a55c-616aeef1415a">
+                    <propertyInstance
+                      Id="0da16d24-caee-4e52-97a0-d35278399a02"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21cf73e7-849e-4109-a7e0-d36ed3cfdab5">
+                    <propertyInstance
+                      Id="19a956da-d142-4290-b01c-2e355f186a32"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b26980a-44be-4d62-be26-9457eecb4eb7">
+                    <propertyInstance
+                      Id="60a1d25c-269b-437d-af5a-d5a38b1b256d"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="104e0406-7581-4150-a890-2cf0dcd6473c"
+                LastKnownName="DbSet&lt;Payroll‎&gt;"
+                LastKnownLocation="Package6_2307.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b30ce944-1a6e-42aa-93ef-631d496cf5b0"
+            name="EmployeeContext"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="85dfd362-62a3-435a-878d-94609c60e5cb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployeeContext Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="809b209f-55d8-43a7-b650-fd52993e1d9e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8949d55-010c-497f-8be5-520877e48358">
+                    <propertyInstance
+                      Id="6542b4c5-fa14-4ad1-90e2-f20584a82d42"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07b72862-47f8-4f72-95f0-44aa7734b325">
+                    <propertyInstance
+                      Id="a968c976-ff54-4c7d-99ce-513c272cd5a8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05983da7-6564-470d-9602-836e46a05a87">
+                    <propertyInstance
+                      Id="5293a9d3-c5cd-47d0-ae9d-28584161f3b8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="126f471f-1fba-4bcf-9fdd-9a1720dfb8ea">
+                    <propertyInstance
+                      Id="a4a5bbfb-cc04-4799-9925-1addaa3c4f4a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04149d1c-2347-446f-92df-87285583ca25">
+                    <propertyInstance
+                      Id="55349c8b-d22d-46f4-860b-93293d68a6a6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1f6e9fe-9c56-4d94-bf32-5f018a494e5d">
+                    <propertyInstance
+                      Id="48ea0995-28a9-41ed-bf42-22d3c68e470c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="50ab889b-0bd5-4ffc-87a9-2a831ff23808"
+            name="OnModelCreating"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5c3a3057-86fb-455d-b0e3-add3d51a1d9e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployeeContext Member%3D(Name%3DOnModelCreating OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fpackages%2FEntityFramework.6.1.1%2Flib%2Fnet45%2FEntityFramework.dll&quot; Namespace%3DSystem.Data.Entity Type%3DDbModelBuilder)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="12e0d893-4b6d-40e9-9cac-39e268550c44"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e239eaac-190a-4f50-9df8-98200f770176">
+                    <propertyInstance
+                      Id="62cdea29-0530-47f1-bc3a-12b9647f62c9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd40e2c2-a770-47c0-8d41-722562bc20ec">
+                    <propertyInstance
+                      Id="d8caed2e-8ac3-4382-9f3f-d5ea23be1d76"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac6459d8-c116-428a-bf1a-3ae387682091">
+                    <propertyInstance
+                      Id="0d766b9d-fed0-45f4-803a-2d9e13c3e5cd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2837797-7eb4-4768-aeb3-ca6195014bcd">
+                    <propertyInstance
+                      Id="909e75fa-26c7-4242-9434-7fd2551b29d8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4060705-2a6f-4426-a83f-5a484a4fc1e9">
+                    <propertyInstance
+                      Id="938e7ee4-92cb-451e-93e4-adea2f74e6de"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="010e404e-faed-407f-a13b-1478cee983bb">
+                    <propertyInstance
+                      Id="fa270a2c-e654-4c7d-aaf8-9be5037247f9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3dd6d5bb-a64a-4df2-a26e-45503cf59845"
+                  name="modelBuilder"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cd5c1606-e19f-42cf-b0bd-dfd4d6a0a704"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployeeContext Member%3D(Name%3DOnModelCreating OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fpackages%2FEntityFramework.6.1.1%2Flib%2Fnet45%2FEntityFramework.dll&quot; Namespace%3DSystem.Data.Entity Type%3DDbModelBuilder)]) ParameterIdentifier%3DmodelBuilder"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e72b6d3d-e04e-43e4-b531-b0ec40ed9fd4"
+                      LastKnownName="DbModelBuilder"
+                      LastKnownLocation="Package6_2307.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="be6472db-311d-428c-9a13-469e9d2a8148"
+        name="Department"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="dedbf097-abba-47c9-9a05-2953a20e2063"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DDepartment"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0b259f0c-4d3b-4e91-a419-16bbb2b5c1ab"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a00bb049-cf4c-41a6-b5ce-db7ad8453470">
+                <propertyInstance
+                  Id="d716d93e-ec85-4699-9f9a-a3d8cc5e21bb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7e74c18b-551f-494b-a029-662f6cabe65a">
+                <propertyInstance
+                  Id="04684876-f880-4c2a-b415-24c6e54405cf"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c5d7f031-7407-49e3-8371-7bf0c37ddf14">
+                <propertyInstance
+                  Id="96c481cf-825b-40fa-b9ea-42d38351e0be"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0e2b2ce9-3c89-442b-be97-51244dd49c1c">
+                <propertyInstance
+                  Id="f5cbce45-0d00-4576-88ea-982a2688dc34"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8612e9e6-f018-4ad6-a193-1f02bd4875fe">
+                <propertyInstance
+                  Id="26190159-ff8c-4522-b36e-938a70ebb401"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="2d56e383-3eb4-454e-95c1-3ab20e8abd76"
+            isDerived="false"
+            sourceEndRoleName="Department"
+            targetEndRoleName="Employees"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="e18ca9a3-fa62-444f-b8df-7f88699395d4"
+              LastKnownName="ICollection&lt;Employee‎&gt;"
+              LastKnownLocation="Package1_2310.uml" />
+            <description>Property Employees references type ICollection&lt;Employee‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="addb9054-aa40-4da0-abca-0746177283ec"
+                  name="Department"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9bdda608-4dbb-4b48-af0e-9651e3f4de2e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c88fa6ff-c584-4f3a-82a1-2894ed978411"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8c369b0d-4f78-4bd1-9e3d-f5c843d2800f"
+                  name="Employees"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ecfe5e97-7e09-45c5-afc2-78e6a3b9c7e2"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b9994623-5995-43e9-aa9f-ff99b342cfc7"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="ef306ebe-4755-499d-b4c2-e792378b93e9"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8a502d9e-7621-4dea-83c2-be9672025a8f"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DDepartment Member%3DId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2d2d1a8a-87f8-4c3a-aea0-eef6230bc756"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84b7e6ef-63db-48b7-9044-81d25b2ea841">
+                    <propertyInstance
+                      Id="0cfa030d-eda2-413a-9e96-ef0282ff44c6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53d59067-361e-4e95-a4b6-bb71d42bace5">
+                    <propertyInstance
+                      Id="20932b64-ca92-4e3c-a37f-fb49ab1222bd"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf107049-a5f7-4f0f-8c4f-821e8b541eaf">
+                    <propertyInstance
+                      Id="f43f4ea5-98f4-4b2d-be58-cf06a8dd56d5"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5079b55b-bd8c-411d-9ac8-35f171e59634">
+                    <propertyInstance
+                      Id="70c9f9f6-03b9-44e0-b96c-c57d312ac65c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee11b3fe-986a-4ac6-8d9d-bfbbbbeec840">
+                    <propertyInstance
+                      Id="d0611e59-5215-4b2c-b2fa-e12dff49c836"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a7ea94c-796a-466b-bdf7-660045a89c22">
+                    <propertyInstance
+                      Id="b4d104a8-9e49-451b-ae63-b35765823262"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28ba3101-5b82-467a-81a7-4098079ae593">
+                    <propertyInstance
+                      Id="99320894-250a-4d7f-8a9b-d39a70352167"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="28ebf597-f7d4-47ff-9c29-5e1ad8b34217"
+            name="DepartmentName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3c345fac-dd5e-495f-a531-376a89dc38d1"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DDepartment Member%3DDepartmentName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b32ff231-4009-4d8e-8028-d0d138f5b149"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7bd84739-26e7-446a-a0de-98918d5db045">
+                    <propertyInstance
+                      Id="fef92acb-84a3-4e55-bf6e-998d25cd6ee1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9734a6f-f5fd-468a-9b25-447385f606e7">
+                    <propertyInstance
+                      Id="60ad4256-9803-4154-aeb2-761c3d92a8be"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b339aa42-f949-4448-b01b-f73cee07e6db">
+                    <propertyInstance
+                      Id="6d7cf68a-469b-4e88-a840-0f1324153294"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c6e3911-7a73-49e2-862a-e09c69ae5b7e">
+                    <propertyInstance
+                      Id="d9ffc545-b3a9-4cef-8af4-2769b93ba233"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f35773f0-258b-47c1-bbee-ab07c661a2fa">
+                    <propertyInstance
+                      Id="3c98df8b-6896-43b9-90f1-7dedbaeb72b5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da5c198b-d2ff-4c95-be88-dc31b999737c">
+                    <propertyInstance
+                      Id="fe5b8a31-b11f-49ff-a9ab-49c1d2fdabf6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="574c0f7e-6e58-43ef-adad-6981f9b243e9">
+                    <propertyInstance
+                      Id="30a19f6f-43fc-4d7b-bc24-ad5f3ba10459"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7a72df82-6bc5-47d7-85c5-4cc7aeafe173"
+            name="Employees"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="94a77fb5-16fc-4189-bdc6-e9121f7751b5"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DDepartment Member%3DEmployees"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fd9e65ba-f2bf-4235-82a5-4713c2a10df9"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ef36f15-916b-4beb-8e78-d63d96cbe84a">
+                    <propertyInstance
+                      Id="abde3c57-55b6-4020-9e89-ccde442951fa"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb6dfc1c-64c4-49a9-9b13-d001f01d5076">
+                    <propertyInstance
+                      Id="166469a9-750b-41ea-a2b8-be565e18474a"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a2276c9-5e6b-4569-aa57-0b9a86ddf276">
+                    <propertyInstance
+                      Id="2075d8a2-a6d3-49eb-b1bf-8bc8b95ceb21"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1090c1d2-ac63-41e0-b48a-aea65bd6b42d">
+                    <propertyInstance
+                      Id="1efbf1d9-1d1e-4f64-82ae-7d6a0c3e1399"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="640aa9a5-2cc6-408a-9f8d-b59b3ac6fba9">
+                    <propertyInstance
+                      Id="0584a89a-860a-49aa-81be-4aa7829a8ecb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c41087d-a768-4701-ad9d-5a090c43986d">
+                    <propertyInstance
+                      Id="5e877f81-39f3-42e4-ba18-ab92b9955b1c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e00e1359-a86f-4a93-9f0a-5b59d4dec9d0">
+                    <propertyInstance
+                      Id="b1db99ee-fae0-42cb-a36c-90119a3cac57"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="e18ca9a3-fa62-444f-b8df-7f88699395d4"
+                LastKnownName="ICollection&lt;Employee‎&gt;"
+                LastKnownLocation="Package1_2310.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5e1e0651-8c00-43b3-b98c-4fdb2f4eb633"
+            name="Department"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="825170f3-b135-4b73-9eec-3ebfb0c8b882"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DDepartment Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e86aff51-4046-4a04-95f8-6e8f997294cb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52566466-105c-4a63-aa9a-70c0a19ce02c">
+                    <propertyInstance
+                      Id="62668d9a-f723-4e87-b4ff-da103ab24e3f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79c50858-91af-4be0-b0f1-ae52052d54a0">
+                    <propertyInstance
+                      Id="0396e073-4c22-4a95-bc73-eab529649d10"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c94a9e4-cdd4-450b-99f6-02e86bbff269">
+                    <propertyInstance
+                      Id="53ae56b7-cad4-452e-9c98-87d31769381b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b86d495-ebd4-4bc3-96e3-4224d6fc4280">
+                    <propertyInstance
+                      Id="0eac6b30-755d-4e91-b395-220c4f7226f1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2de8858e-2434-4ab3-bdf3-59c87badbe30">
+                    <propertyInstance
+                      Id="db3137c9-f4f0-406e-bb1e-6a93a8a9441a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eefe17ca-ba17-4d14-8c5d-673ebb20cb53">
+                    <propertyInstance
+                      Id="bb3dccb9-d558-43a5-bde8-63519772e298"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3577b5ec-5932-4c5d-8d4f-b35ca9f42d5b"
+        name="Payroll"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="32211969-e711-470f-b731-f7dfcc102feb"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DPayroll"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="846dba2a-79a5-435e-867b-23367adc5579"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a6adda32-5694-40e6-a7e5-00c7c5c611f4">
+                <propertyInstance
+                  Id="c1ae5d0b-ad58-441e-924c-8000891ab244"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7fd6c4da-f538-44f2-b99a-2eadab364443">
+                <propertyInstance
+                  Id="096a0b1b-3745-4c13-b5d5-79509642bc8d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5aa92530-7f47-447f-abcf-4b558bd1fc9d">
+                <propertyInstance
+                  Id="2215f962-8e2c-40d5-bd10-f4fc106d5ad6"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bc91cb2f-5b19-42a5-a6fe-160d4f8a4e5a">
+                <propertyInstance
+                  Id="a91221c4-792c-4539-b93d-5d1c2d7f37a5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f6df5eac-69a8-488f-bee6-66f2aadfdbed">
+                <propertyInstance
+                  Id="0f46e481-1323-4246-a325-9dca69fb38e9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="49ca1286-03b4-4683-a48a-5ac16ab52da2"
+            isDerived="false"
+            sourceEndRoleName="Payroll"
+            targetEndRoleName="Employee_Id"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6c4ffc85-c55c-49de-b82f-d210e8452fa3"
+              LastKnownName="Nullable&lt;Int32‎&gt;"
+              LastKnownLocation="Package3_2307.uml" />
+            <description>Property Employee_Id references type Nullable&lt;Int32‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d961882-9668-4539-9526-9b7451e611a7"
+                  name="Payroll"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4333342e-b25c-45bf-9f3b-b6ffc1b34527"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8d1ac413-bcc4-4f05-83cd-195e591e9852"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aa04cdfd-02ba-4630-867e-9a7ddfcf37d9"
+                  name="Employee_Id"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d63324db-7112-41ba-9c4d-ced361a5d818"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="99da5eae-4c9c-4cd8-93b2-6cff3678d5d3"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ad24c227-bdda-4081-96ae-cd71ab2d6de9"
+            isDerived="false"
+            sourceEndRoleName="Payroll"
+            targetEndRoleName="StateTax"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f7923bb9-e32f-4368-bcac-556350a3d4cf"
+              LastKnownName="Nullable&lt;Decimal‎&gt;"
+              LastKnownLocation="Package3_2307.uml" />
+            <description>Property StateTax references type Nullable&lt;Decimal‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ed4145a2-f065-4be5-ae05-d6dbdcc4fbf2"
+                  name="Payroll"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="de6ea2fb-d585-4e82-bf14-e98bac693118"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cc399934-5243-481b-93f1-b8e0f8dc20f5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a45247ce-a74e-4b69-9150-2d6cdd7cfc2a"
+                  name="StateTax"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="dce753cc-cca4-46ea-893b-bfb218160d3e"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f8243fef-ed11-46fe-bc99-8b03a26cdb10"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0db07214-e534-44d8-b50a-ebbffd05ae40"
+            isDerived="false"
+            sourceEndRoleName="Payroll"
+            targetEndRoleName="StateInsurance"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f7923bb9-e32f-4368-bcac-556350a3d4cf"
+              LastKnownName="Nullable&lt;Decimal‎&gt;"
+              LastKnownLocation="Package3_2307.uml" />
+            <description>Property StateInsurance references type Nullable&lt;Decimal‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cc52415d-08df-462f-8431-559eea53af97"
+                  name="Payroll"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f9fecc87-a8f3-471b-b936-a0efb1339e75"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1c7d54ba-628c-4c94-a6f2-48a1b9fc7f2f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eb8a9d0d-9a56-4872-b59e-9c572728d5c5"
+                  name="StateInsurance"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="061660e1-9232-483d-91e8-97621606405c"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="47d97a58-412f-44e5-98f9-c6ef6dd36a7b"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b96c6c94-05ab-48b7-bb2c-264ac4cfe328"
+            isDerived="false"
+            sourceEndRoleName="Payroll"
+            targetEndRoleName="NetPay"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f7923bb9-e32f-4368-bcac-556350a3d4cf"
+              LastKnownName="Nullable&lt;Decimal‎&gt;"
+              LastKnownLocation="Package3_2307.uml" />
+            <description>Property NetPay references type Nullable&lt;Decimal‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d47b3b7d-d35b-4f1c-b906-9edb0ce01c16"
+                  name="Payroll"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6b392d16-055a-41b1-99d7-6fa0bd45f1f3"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ec46b992-86db-48c9-871c-1a8c7cfbd5e6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b21c9fbd-efa4-47aa-8aa2-b4a96c5adb2d"
+                  name="NetPay"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="fe25d7e4-48b3-49df-8f0d-21d8c51fe646"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="039c1c63-64a9-43cf-b301-999b20a3f2d8"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a1c65a3d-1cd0-4a00-9436-d4caf32b25da"
+            isDerived="false"
+            sourceEndRoleName="Payroll"
+            targetEndRoleName="Employee"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="46966032-f9a0-4473-b195-a98d1add76b5"
+              LastKnownName="Employee"
+              LastKnownLocation="Package2_2307.uml" />
+            <description>Property Employee references type Employee.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7959278e-bb52-419e-98d5-fe6341adc2d5"
+                  name="Payroll"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8c099e1d-f53d-494f-8ae4-1768b2b9f83b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3cb08193-acee-4694-b93d-ec8f27a9925a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="952093f8-9ac6-400c-abcf-551f6276b03c"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1b9a5271-88eb-4966-b27c-b4dae290ba03"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="61fd77a9-39bb-48f1-ba95-1ede2c6b10fd"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="c10a74cb-ea57-4b87-b0f5-c8a42fa35521"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="74e65db9-5e73-476c-af3c-d73288357aa3"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DPayroll Member%3DId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="37c49ffa-815d-4de6-9589-afa9823b7b0a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f4b0dd7-dcc2-478e-9dd7-56f12427ac52">
+                    <propertyInstance
+                      Id="0411b2ca-4463-47b4-889a-79fdb697fc9c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4bb53ed6-0356-437e-9752-71bbeb5622b2">
+                    <propertyInstance
+                      Id="7e3f609a-84ec-4e71-9705-b871f28d8777"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78699c75-3e03-434f-995c-76553a925f84">
+                    <propertyInstance
+                      Id="d79928a9-1095-481d-840f-4576ddf8001b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43b53076-c8da-4e24-a2e8-09e073fe9057">
+                    <propertyInstance
+                      Id="e14fd694-b552-497b-9019-7d7ea956f9d0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e53d254b-3f92-4856-99af-0b8db9a6d1e6">
+                    <propertyInstance
+                      Id="5fe6e716-bbbd-469d-83b1-c158198cab3d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5bc7908-2df7-4676-95fa-2063e0b9a75a">
+                    <propertyInstance
+                      Id="8a8c3753-06b0-44f1-bf64-47b627b7b4f5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a87010ff-34fd-4320-9b5f-3972e4d4a9ef">
+                    <propertyInstance
+                      Id="058645d0-50c7-444b-9aa2-50f33f18a6e6"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="daa89c71-319e-494b-bb20-522a8e48d76d"
+            name="Employee_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f017fdff-3fc1-48ad-86d4-fd5bae2bd338"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DPayroll Member%3DEmployee_Id"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0aa0a530-598b-464d-ae00-00ec7c9c0b89"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b643744-acfd-4f1c-af4b-6889ac682bc9">
+                    <propertyInstance
+                      Id="4f46b92c-52eb-466f-813f-51403ca0dc6b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="488dd9a0-b38b-477c-ae6f-9d34103d1544">
+                    <propertyInstance
+                      Id="c0ab005b-551a-4ac3-a9eb-89573dea138e"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d62a12e4-6f1a-4454-b496-5a1f14c321cb">
+                    <propertyInstance
+                      Id="42b2d2cd-978a-4bbc-9156-cbfe73affcf3"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fdef9878-02ad-4b46-be56-d6a9df44743d">
+                    <propertyInstance
+                      Id="e520c259-fdac-48e6-a329-e5168c257366"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28961294-1a72-44e9-8776-568a322a1997">
+                    <propertyInstance
+                      Id="1ccbd6bf-e84c-4f2a-8b22-10f92c5b9cd0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b45d5b0-14f9-4961-b3b9-61b3aae904f7">
+                    <propertyInstance
+                      Id="aa160b40-28fa-4927-b050-d699debb49c5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f678b7ce-400b-4e24-872a-45fe84c7de06">
+                    <propertyInstance
+                      Id="4dfe1597-f0bb-415e-a7a0-b07bd6f413bb"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="6c4ffc85-c55c-49de-b82f-d210e8452fa3"
+                LastKnownName="Nullable&lt;Int32‎&gt;"
+                LastKnownLocation="Package3_2307.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="72f2bac3-489b-434d-bfbe-00472acabae3"
+            name="StateTax"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="113e3345-a21c-48d9-b0f6-dfb79df0b5d4"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DPayroll Member%3DStateTax"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0c0f4564-7a05-47f7-9fdb-bbbb3784962f"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bbcb3a21-822c-4f55-8432-ef192f65449e">
+                    <propertyInstance
+                      Id="987ae7b9-689c-4920-913a-3f4ae3774f16"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a99e3988-8e01-49d6-81bb-6491ff2aeada">
+                    <propertyInstance
+                      Id="bb6c65b1-4d11-4ae2-8e4b-a40f23acd3c6"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bf9e1b1-3208-449f-8681-ee5ed2e6ee5a">
+                    <propertyInstance
+                      Id="b27288e2-83f1-4726-a237-1789f6726b8c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d52baaee-ab8f-4b40-b90c-1531e49e4f5e">
+                    <propertyInstance
+                      Id="645b20c2-c7b5-4e08-8eae-ae6b72273ead"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d6de66f-2145-426e-9ab3-4eb2e5c8c3d5">
+                    <propertyInstance
+                      Id="faa1452d-a42d-4904-bdb5-ce8d3fe8ee0e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85b28b3d-0f0e-45b4-8ef7-b5509a10b9ed">
+                    <propertyInstance
+                      Id="3ce4a83d-f8ec-4455-9beb-f8965fa6bcd1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8ceed06-b626-4f9b-99e9-e6a774258475">
+                    <propertyInstance
+                      Id="a69aabfd-4330-4f86-a569-c99f7df3698e"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f7923bb9-e32f-4368-bcac-556350a3d4cf"
+                LastKnownName="Nullable&lt;Decimal‎&gt;"
+                LastKnownLocation="Package3_2307.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="25f404bc-333e-4b56-9c67-d2b151c5fde8"
+            name="StateInsurance"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9928101f-9e46-4b31-bca8-850fc2712c06"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DPayroll Member%3DStateInsurance"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="75ec8fe8-ffe7-4c25-8e11-20616e68ffca"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5ae94ea-3e85-4f58-9c74-357f6e138e3e">
+                    <propertyInstance
+                      Id="f8f800af-267d-48a9-b0e8-5b6b3f2877a1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b79bb423-b5a8-4518-b815-2c3a3c8a8d40">
+                    <propertyInstance
+                      Id="33cdc209-0b1e-4832-a30d-714a5236df0c"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56cd873e-dffd-46ac-a2e9-27933cf7bce9">
+                    <propertyInstance
+                      Id="ae6e2f39-72c4-42f5-8535-8f633fe6d8cf"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3ebf6e7-5832-4b13-b6bc-22c4a0ecbfa3">
+                    <propertyInstance
+                      Id="1d5e2873-7772-4295-a12b-abb5b2657a52"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99c8219f-888c-43f4-a035-12a0e46a088f">
+                    <propertyInstance
+                      Id="c8a84edc-5717-4478-a2c5-103702dd45c5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08562009-787b-44c4-8c14-e01dbb2b9dbb">
+                    <propertyInstance
+                      Id="3a82427c-6bae-464d-8451-c9af981d90ba"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d966cb7-7e05-49de-a840-9eb53413428a">
+                    <propertyInstance
+                      Id="d0297fbf-23d9-4a6e-83c2-260a4dbd52dd"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f7923bb9-e32f-4368-bcac-556350a3d4cf"
+                LastKnownName="Nullable&lt;Decimal‎&gt;"
+                LastKnownLocation="Package3_2307.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="064259fa-35cb-4d29-bce1-7266a36caff1"
+            name="NetPay"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="725005a4-d545-4655-bccb-5ffd175df042"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DPayroll Member%3DNetPay"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a9aa216f-fb0a-40d9-9143-bb0d357ca6d6"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de03be09-1dea-4de6-8b1e-2776f6f2be1b">
+                    <propertyInstance
+                      Id="3d12f547-90a6-4e1b-b2e9-e4b25fb8555e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e7c1dc5-81d5-4234-94c1-a39ca3916fe2">
+                    <propertyInstance
+                      Id="1257ca42-04d9-41b0-bb20-446be9650e50"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72a11d3f-27d0-4004-807b-f2e1424a6b50">
+                    <propertyInstance
+                      Id="da43b296-aa87-4d89-a155-885cd07da6eb"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec1a8c79-79e0-4c83-a445-450361ee7588">
+                    <propertyInstance
+                      Id="d3eb2523-4139-4894-aa7d-fba681fd201d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aeb7becc-51fa-4db2-9566-942ebf74ee3b">
+                    <propertyInstance
+                      Id="ace446c1-4a2a-40d9-a71e-3e5aaec3d04a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad6d4ffc-747d-48a5-a56f-ee0100f994ae">
+                    <propertyInstance
+                      Id="e423e123-4a1d-49e4-b284-9e09cb425c24"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3be491a0-8df3-4bca-8243-2ef504caabae">
+                    <propertyInstance
+                      Id="31b18588-d332-43ca-b061-be0dcefd46f8"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f7923bb9-e32f-4368-bcac-556350a3d4cf"
+                LastKnownName="Nullable&lt;Decimal‎&gt;"
+                LastKnownLocation="Package3_2307.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5fb7645f-e531-4e1a-9987-bbf573f11efb"
+            name="Employee"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="63b563ce-dc78-4f7d-ba45-580c09d21ec0"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DPayroll Member%3DEmployee"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="45504f9b-0b66-4b9d-9b15-fe399da3438e"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e10bbd59-eb23-4e18-b5e8-7e2195fc740c">
+                    <propertyInstance
+                      Id="2f22163c-b694-4893-8d5f-ce39bdadd398"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9a7d30b-d596-4561-aaa1-1288209d5698">
+                    <propertyInstance
+                      Id="cc0b5c6a-b03a-437b-96cb-ccd8b83efbc4"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93e58a0d-b46b-47cd-a454-36bfd166b6d2">
+                    <propertyInstance
+                      Id="454138e6-072a-449d-ab3b-071242ce0728"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0019cfe-071e-48ae-8755-edf6cf8ab59a">
+                    <propertyInstance
+                      Id="dfce39ca-119d-452a-ac0d-b63bfce833f3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd36338e-fb9b-4a20-a97e-712fa893670f">
+                    <propertyInstance
+                      Id="52535635-981d-4200-88e7-d861ca437afc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ca17b18-afd1-433b-8ae4-5728af13a057">
+                    <propertyInstance
+                      Id="bd9f698a-3f69-4e42-bb3c-c958a1989ff8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a5c7112-d443-4b1c-b251-545544a6dc12">
+                    <propertyInstance
+                      Id="7b2718fc-5665-4236-a34d-b4ac211e56a7"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="46966032-f9a0-4473-b195-a98d1add76b5"
+                LastKnownName="Employee"
+                LastKnownLocation="Package2_2307.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="6ae53e3c-9f35-4f94-b7af-86fd2dfe8657"
+            name="Payroll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="be79668a-7033-4101-9b4a-2a857114c3f8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DPayroll Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dfbf47c4-827f-4027-ad9b-dba30777b870"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5eb7aaa1-3ad0-44a2-95ec-6bf4a97f22ce">
+                    <propertyInstance
+                      Id="1eb1162b-4158-42db-8e35-716904e79797"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4111e2aa-2f9b-446f-bf0b-6e7fe27b196b">
+                    <propertyInstance
+                      Id="b4f6ec2a-3a1c-430e-afff-c2f12c0449c7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34517934-13c8-4943-8fa5-7c53fa9015fd">
+                    <propertyInstance
+                      Id="fa0bf3e0-9d05-43b9-a016-23af36c843f2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd751db3-27fd-4f74-87aa-e325513b87e5">
+                    <propertyInstance
+                      Id="4bd88cfd-c143-482e-8d1c-5fba0001122f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff0810e6-b357-4f1e-b7a9-4fb5887578d2">
+                    <propertyInstance
+                      Id="d39cfd13-282a-4983-bf85-0d999bca78b6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d525a159-0068-4426-b74f-942c835f095a">
+                    <propertyInstance
+                      Id="1bb9b9be-a1f1-41cf-a776-63ecf9f18dd9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="46966032-f9a0-4473-b195-a98d1add76b5"
+        name="Employee"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="14936a78-0033-4033-9d7a-5b8e5b1da9bc"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployee"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0cd135c8-71f7-4b7b-bf5a-3e430b789b5a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9a6d6b01-a760-4fde-8a19-9b63c0b7d979">
+                <propertyInstance
+                  Id="babf7608-67fe-4335-9acc-958e61b442f2"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="63a2bc11-0bb7-48e1-a48e-1dbf5cac3f02">
+                <propertyInstance
+                  Id="7209f21f-a685-47a3-a8e2-b8eda2ccb4ab"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dd34814c-353b-4044-94fe-9a658e4f68c2">
+                <propertyInstance
+                  Id="d8099835-ea3e-47f6-afd7-fe2337655159"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2e45ca23-eb4f-49f2-b9fa-123d99913741">
+                <propertyInstance
+                  Id="274017b4-7fa0-4554-9069-0d651ac8c972"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7e38c962-9300-4080-902b-029b8d2e58cf">
+                <propertyInstance
+                  Id="4dae379f-a5cc-4b55-9442-ec577b72e9c6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="193e2d20-662a-413b-b8c4-5dca2e24e08c"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Department"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="be6472db-311d-428c-9a13-469e9d2a8148"
+              LastKnownName="Department"
+              LastKnownLocation="Package2_2307.uml" />
+            <description>Property Department references type Department.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4702f77a-a138-4153-97cc-94605604067a"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="55601aee-020e-45f5-8a6f-3e441d466329"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="07cbde5c-4042-4d08-81c0-3f59aa6f9946"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="448fd1bc-1c6b-4caa-b27d-eff84c247b11"
+                  name="Department"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="01476711-2aff-43a4-bd4e-4d79766497b6"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f112242c-0676-4efb-b215-e6dd63eb8980"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f2d817fb-73ff-4204-999e-3232e934c850"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Department_Id"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6c4ffc85-c55c-49de-b82f-d210e8452fa3"
+              LastKnownName="Nullable&lt;Int32‎&gt;"
+              LastKnownLocation="Package3_2307.uml" />
+            <description>Property Department_Id references type Nullable&lt;Int32‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ed82b93f-e045-46be-98a6-c4a028609090"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4b197945-bc6d-4532-9fba-255300b1782e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d93d5556-c00a-4c63-9ad3-949f98630071"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b011d3ed-7f33-403d-bee5-e45594b30b99"
+                  name="Department_Id"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="43869145-cd06-4a84-8072-dd83eefb03af"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="def2d1b0-3e7c-4e0f-8f33-988437f9e6ce"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4d13ca5d-1c74-4bd7-ae5e-cac281f3700c"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Payrolls"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="ee7969dc-e95e-4495-be0a-c531fb524278"
+              LastKnownName="ICollection&lt;Payroll‎&gt;"
+              LastKnownLocation="Package1_2310.uml" />
+            <description>Property Payrolls references type ICollection&lt;Payroll‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2df55d6c-126d-40f8-82d1-8a36f0e6c638"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="694fba5b-ab3a-41bb-be08-f50a7a8719fa"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9683bed9-85ae-4100-b3f4-301c8f218d0a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e6ad3773-6abf-4960-8aec-0e74922fe25b"
+                  name="Payrolls"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3fa38732-17c9-4742-bec3-9d00f755cf7b"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="99da4102-0e5c-4fbb-bc67-b2c32665bfa4"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2392167c-a74e-44a9-8bb0-2ffdafdeb40f"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Salary"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f7923bb9-e32f-4368-bcac-556350a3d4cf"
+              LastKnownName="Nullable&lt;Decimal‎&gt;"
+              LastKnownLocation="Package3_2307.uml" />
+            <description>Property Salary references type Nullable&lt;Decimal‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bb5700c5-f8f7-45a4-b858-bbb956949d06"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="dd44f73a-be7b-4c81-ab39-843170eed0d5"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="06ba4e1c-500d-4f37-b562-371ab887c260"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="25dfca7a-abd5-4d1f-a91a-b0d25d828191"
+                  name="Salary"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="15c745e9-fb24-4101-9d97-cebe1cbe88c5"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="04264b5d-ceba-4618-a6a4-ec90e8df6707"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="1edacbe8-2850-4c44-9c18-1a8fb5f5f73f"
+            name="Department"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="65645285-35a6-481d-8dc4-a03a1244edea"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployee Member%3DDepartment"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="88ac89cc-5554-4243-b882-944ccfc38c13"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff701a9c-f999-4e40-9a62-372f83d58ebd">
+                    <propertyInstance
+                      Id="d280a69f-722d-4741-8005-9456c5c58c16"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e74aecf-cef0-400a-a941-cfe851663cf7">
+                    <propertyInstance
+                      Id="09fa0b26-b8f0-4326-adde-3defaf4cd60f"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9365ac68-a655-4722-90e1-d89ebe7ed14d">
+                    <propertyInstance
+                      Id="82832409-ce7b-4e28-a152-0ec8aabe05c7"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbb45366-1246-4623-b527-89db8adeb9b0">
+                    <propertyInstance
+                      Id="5c969e6a-1f0d-4af3-9271-7f70797dc14a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5ef509b-7b08-4914-8d6a-42c8fa95de49">
+                    <propertyInstance
+                      Id="88374dc9-75fb-44c0-bdf8-702da296950f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39cbcae5-877c-433b-9596-a0ac4c7e3c91">
+                    <propertyInstance
+                      Id="03027c49-77ef-4d68-ae2c-1604608b76ea"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b6d902d9-82f5-4d0a-85ba-cf59981c174a">
+                    <propertyInstance
+                      Id="ecef046f-6d66-4230-b14e-b74c288dc8be"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="be6472db-311d-428c-9a13-469e9d2a8148"
+                LastKnownName="Department"
+                LastKnownLocation="Package2_2307.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="10948c27-8e91-49c2-8552-3bd5aa7f38ec"
+            name="Department_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d7712bdc-cbb8-4290-9b71-2d4e74105709"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployee Member%3DDepartment_Id"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="028b6ccc-d739-403b-900b-8ce1feb6bc89"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52666d2c-8957-4377-bf70-6ff19f2a6824">
+                    <propertyInstance
+                      Id="1c43eea7-62ef-4411-97a3-93ab82d58bdf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec4e21af-3ea9-498c-a513-f6582cc8accb">
+                    <propertyInstance
+                      Id="9e297ba5-a545-41db-898f-47b00e9eb3c6"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1b2693c-9184-4091-913c-dca47630d8ab">
+                    <propertyInstance
+                      Id="99649bec-b592-4ec2-b5e2-f48ea0ada508"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3e537c1-121a-4b00-8033-1930356545d8">
+                    <propertyInstance
+                      Id="8c21bc8b-2a67-4459-9fbd-3121e8e59951"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78dbd47f-fb11-475d-92d8-5bf412804c9e">
+                    <propertyInstance
+                      Id="6dcb0eab-c4e7-4077-8596-7989cdfc6a00"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="663cc556-9599-41a6-b36a-9cc7937c69ba">
+                    <propertyInstance
+                      Id="24ad1793-9671-4418-a244-a71f4a4c2e28"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="266fd8c9-3236-4b58-b251-c382c56d689c">
+                    <propertyInstance
+                      Id="147fb4e3-dab1-499e-9ef1-70c132d7bad9"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="6c4ffc85-c55c-49de-b82f-d210e8452fa3"
+                LastKnownName="Nullable&lt;Int32‎&gt;"
+                LastKnownLocation="Package3_2307.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="bb8b01da-6c59-4f29-b61c-554be841937c"
+            name="EmployeeName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a2bb73bd-0960-4e3f-8be0-7fac66a47984"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployee Member%3DEmployeeName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a5485ecd-5e2e-4962-845c-fc41e5fb2388"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea0474f7-77ba-4ad7-bfcc-3fc65bd1ed51">
+                    <propertyInstance
+                      Id="220c4bba-1458-4890-bfe9-bd258243f442"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="660d6205-4671-47ac-8c91-28338b1bf794">
+                    <propertyInstance
+                      Id="1ee17377-2f4e-46d4-b76a-13870a1b80d7"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83c50e06-00e5-4790-a98c-580b3b0292d1">
+                    <propertyInstance
+                      Id="64c260eb-7d1c-433f-a6a0-a44de232066f"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31215d23-f847-4ca0-9345-e2b682200210">
+                    <propertyInstance
+                      Id="1ca4e1e1-36c7-4ed3-b333-607591b7764c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ee1a736-2945-4ace-88d0-0ae2ee4af5ed">
+                    <propertyInstance
+                      Id="bdd33302-1f89-4955-9dde-17bc912c16c9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c4abfce-9ef1-4ced-bc8c-17b5f29286a2">
+                    <propertyInstance
+                      Id="3657f36e-99e7-4120-914d-15ef3e1ab7ea"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c96668a-54ee-4a45-9bac-414dd710f477">
+                    <propertyInstance
+                      Id="4527a649-08ef-4c55-9e2f-04c054cf6ae7"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a0d649ac-dd73-400f-95ce-c320d5b94214"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e5017d88-51a3-48fe-8ff0-20f5e9d0be91"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployee Member%3DId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="eacd9cdf-c52b-4397-b731-59174aed145c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2b42ea9-01fb-4d0a-b0dd-eef1ee65ec3b">
+                    <propertyInstance
+                      Id="bcd57eab-95f7-4395-8513-07ca69bcfc66"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44aa4aab-3f17-4507-83c1-2732159f61d5">
+                    <propertyInstance
+                      Id="c7f38e71-cb8b-41c0-9b51-98dbf0825c63"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7fd0fb16-09e9-40f3-9213-bfb1c6313700">
+                    <propertyInstance
+                      Id="083747f5-f48a-49bb-a4ed-2e6420ca9fe2"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14a6610c-b7cd-4ff6-898d-2fdc2dd34099">
+                    <propertyInstance
+                      Id="f9084a1a-3ade-4051-8473-917d00d6a23d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3528818-3d00-4c25-bcb3-7470409b59d6">
+                    <propertyInstance
+                      Id="a49d9088-c890-4c95-94e7-0586c9e33a99"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01b2b66b-bb9b-4dbe-a750-0ee78def1ae9">
+                    <propertyInstance
+                      Id="300ae3bd-b29f-4b1f-a4c7-dd2882a7fd31"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a74cf049-111a-4fde-acec-89faa24ce579">
+                    <propertyInstance
+                      Id="b0086654-8f97-484e-ad71-82723332ff62"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ee9d5d03-23cd-45a5-a648-98c734d32372"
+            name="Payrolls"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3581aa1f-10d8-473a-bc58-3b3e6a3955a7"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployee Member%3DPayrolls"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="66f21aef-6c4f-413b-a3a3-579fe96b9f87"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f0579f9-b481-48ef-90a9-d5e93e07035c">
+                    <propertyInstance
+                      Id="0cb0ff1e-702f-4f5c-bf1f-74825e2552b0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee495bd8-4203-419a-961f-a64a28306765">
+                    <propertyInstance
+                      Id="a18222ff-d3c9-4814-ab06-5c6b8a634bf3"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5346e6e8-836d-442d-923f-018c101f8fa0">
+                    <propertyInstance
+                      Id="fa7635e6-1fae-47e5-a823-4cdc4ea18d81"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e86c2e4-dbea-435d-8dd5-eff786c26efc">
+                    <propertyInstance
+                      Id="1c3e7346-c0a1-4d45-903e-3435207bd40c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7764d467-0be8-4efe-8dfb-b48deb7a0d11">
+                    <propertyInstance
+                      Id="f8c3fb1c-3e8b-4cda-87a0-ab8c15f5a2ae"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f865b36-712c-443c-872a-a5d0ff824fb1">
+                    <propertyInstance
+                      Id="107cf4ea-e4ab-4a74-af51-a979fb898276"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fa4cec6-a693-4986-b97f-6728ef56f211">
+                    <propertyInstance
+                      Id="e7a4e57d-fb84-4832-a00e-9748fb734153"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="ee7969dc-e95e-4495-be0a-c531fb524278"
+                LastKnownName="ICollection&lt;Payroll‎&gt;"
+                LastKnownLocation="Package1_2310.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2a23bf52-2a5b-4430-a223-80914bcac1b3"
+            name="Salary"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="20070656-c9bf-4370-b09d-bdb71f154aad"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployee Member%3DSalary"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4ef8e50d-97b2-4f57-8ad8-d584c2730110"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92ee0043-a821-4a52-bc27-9c674c70d495">
+                    <propertyInstance
+                      Id="41cab560-2774-4bba-b650-4fbdb8243892"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e36a7dfe-a948-4c96-9072-aa3eb7d6dbb2">
+                    <propertyInstance
+                      Id="b9c2410e-32cf-4951-a94a-29410578e7d9"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c119f0f-8383-4184-8000-7f58dde89d2a">
+                    <propertyInstance
+                      Id="57160708-a302-4cf6-9cd8-d0cd36dc03fe"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d08aa35-f074-4959-b6cb-db50e72e8739">
+                    <propertyInstance
+                      Id="fc605686-ed52-44c7-ab06-4dcea5a10b08"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="013d8704-44a4-410b-92dc-7675d35d8c32">
+                    <propertyInstance
+                      Id="80c13039-4c5f-4cfc-a82b-c6a2e448316c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="870ef8b9-77db-4c45-87a9-078774b0d9ae">
+                    <propertyInstance
+                      Id="4e18d154-8117-4ca6-9a0c-6ce7c78e4bbd"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb5fcfc1-328d-424e-bf5c-7c281fc26967">
+                    <propertyInstance
+                      Id="ea93e776-092e-470b-84b5-0f205c9211ea"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f7923bb9-e32f-4368-bcac-556350a3d4cf"
+                LastKnownName="Nullable&lt;Decimal‎&gt;"
+                LastKnownLocation="Package3_2307.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ad8553ee-c3fb-4bc2-bd83-829984010ecb"
+            name="Employee"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7a8f0420-6c2f-4ea9-9d05-6f3bfe45488a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FBlogs%2FUnit of Work%2FUnit Of Work%2Fbin%2FDebug%2FUnit Of Work.exe&quot; Namespace%3DUnit_Of_Work.DataModel Type%3DEmployee Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2778eb68-1966-419f-b373-0878b7fc2a98"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="59d5a97d-6217-4a1f-a285-0672fe4b2712">
+                    <propertyInstance
+                      Id="e355d1e8-d361-4708-9079-42b0e62f0106"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70c7db17-c562-49fe-b1c2-cdb9e876721c">
+                    <propertyInstance
+                      Id="3686f639-04ef-456d-bd8a-293946b78231"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0098109e-e06f-47ce-b513-e7fbe4e9e2fe">
+                    <propertyInstance
+                      Id="5801f460-a432-4841-8192-d66d08028525"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4410eb2-f357-46ef-91a6-27b21323afc4">
+                    <propertyInstance
+                      Id="a6ce6b5f-d0ad-4430-a470-e404fa184f26"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54952be5-62e7-401c-b15f-7e44d575406c">
+                    <propertyInstance
+                      Id="c22eb50f-3d3c-4522-9527-373920a4fe41"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1de0be68-6374-4dd3-adc9-d2114550ca8e">
+                    <propertyInstance
+                      Id="7012f99e-bf8f-47ce-bb98-9b9df25f8eaa"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
